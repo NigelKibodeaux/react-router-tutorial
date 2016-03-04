@@ -183,6 +183,8 @@ app.listen(PORT, function() {
 })
 ```
 
+Next you need to delete public/index.html so that express doesn't serve it as a static file at http://localhost:8080/ and the route you just defined will handle it.
+
 And that's it. Now if you run `NODE_ENV=production npm start` and visit
 the app, you can view source and see that the server is sending down our
 app to the browser. As you click around, you'll notice the client app
